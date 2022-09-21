@@ -7,14 +7,25 @@ import reportWebVitals from './reportWebVitals';
 import Library from './chapter_03/Library';
 import Clock from './chapter_04/Clock';
 import CommentList from './chapter_05/CommentList'
+import NotificationList from './chapter_06/NotificationList';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root')); // 왜인지는 모르겠는데 이렇게 해야 동작함
 
 root.render(
   <React.StrictMode>
-    <CommentList />
-  </React.StrictMode>,
-);
+    <NotificationList/>
+  </React.StrictMode>
+)
+
+// Chapter5 ==================================================
+
+// root.render(
+//   <React.StrictMode>
+//     <CommentList />
+//   </React.StrictMode>,
+// );
+
+// ===========================================================
 
 
 // Chapter4 ==================================================

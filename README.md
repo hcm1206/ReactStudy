@@ -14,7 +14,29 @@
 
 ******
 
+Chapter6 실습 코드가 제대로 작동하지 않는 문제가 있었는데  
+Github에 저자가 업데이트된 소스코드를 올려놨길래 적용해보니 제대로 작동되는 듯  
+아마 버전 업으로 인해 뭔가 달라진 모양  
+
+******
+
 ### 최근 진행 내용
+
+#### 2022-09-21
+**Chapter6**\
+6.1 ~ 6.4(p.180~p.204)
+- state : JavaScript 객체 형태로 되어있는 리액트 컴포넌트의 상태(또는 데이터)
+- state는 개발자가 직접 정의하여 사용
+- state가 변경되면 컴포넌트가 재랜더링되므로 최적화를 위해서 렌더링이나 데이터 흐름에 사용되는 값만 state에 포함시켜야 함
+- state는 직접 변경이 불가
+- 클래스 컴포넌트에서는 생성자에서 모든 state를 한 번에 정의하고 setState() 함수를 이용하여 state 변경
+- 함수 컴포넌트에서는 useState() 훅을 사용하여 state를 각각 정의하고 각 state별로 주어지는 set() 함수로 state 변경
+- 컴포넌트의 생명주기 함수 3가지 : componentDidMount(), componentDidUpdate(), componentWillUnmount()
+- 마운트 : componentDidMount(), 컴포넌트 생성
+- 업데이트 : componentDidUpdate(), 컴포넌트의 props, state 변경
+- 언마운트 : componentWillUnmount(), 컴포넌트가 화면에서 더 이상 표시되지 않음
+- 타이머에 따라 state를 이용하여 알림창 표시 실습
+- 알림창 코드에 생명주기 함수 적용하여 콘솔에 메시지 출력 실습
 
 #### 2022-09-20
 **Chapter5**\
